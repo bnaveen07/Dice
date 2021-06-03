@@ -1,6 +1,7 @@
 if (window.performance.navigation.type === 1) {
   rollDice();
 }
+function rollDice() {
 
 var randomNumber1 = Math.floor((Math.random() * 6) + 1);
 
@@ -32,4 +33,5 @@ else if (randomNumber1 < randomNumber2) {
 }
 else  {
    document.querySelector('h1').innerHTML = "It's a Draw"
+}
 }
